@@ -1,0 +1,89 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "properties": {
+    "a": {
+      "$id": "#/properties/a",
+      "type": "integer",
+      "title": "The A Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "b": {
+      "$id": "#/properties/b",
+      "type": "string",
+      "title": "The B Schema",
+      "default": "",
+      "examples": [
+        "str"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "c": {
+      "$id": "#/properties/c",
+      "type": "object",
+      "title": "The C Schema",
+      "required": [
+        "cc"
+      ],
+      "properties": {
+        "cc": {
+          "$id": "#/properties/c/properties/cc",
+          "type": "integer",
+          "title": "The Cc Schema",
+          "default": 0,
+          "examples": [
+            123
+          ]
+        }
+      }
+    },
+    "d": {
+      "$id": "#/properties/d",
+      "type": "string",
+      "title": "The D Schema",
+      "default": "",
+      "examples": [
+        "01"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "e": {
+      "$id": "#/properties/e",
+      "type": "array",
+      "title": "The E Schema",
+      "items": {
+        "$id": "#/properties/e/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "ee"
+        ],
+        "properties": {
+          "ee": {
+            "$id": "#/properties/e/items/properties/ee",
+            "type": "string",
+            "title": "The Ee Schema",
+            "default": "",
+            "examples": [
+              "eee"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}
