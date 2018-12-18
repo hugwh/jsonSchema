@@ -13,3 +13,19 @@
 json schema文件 自动生成工具：https://www.jsonschema.net/
 
 json schema关键字详解：https://www.jianshu.com/p/9967edb199f5
+
+------------------------------------------------------------
+测试参数：
+{
+    "a": 1,
+    "b": "str",
+    "c": {
+        "cc": 123
+    },
+    "d": "01",
+    "e": [
+        {
+            "ee": "eee"
+        }
+    ]
+}
